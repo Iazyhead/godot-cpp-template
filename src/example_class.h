@@ -7,14 +7,15 @@
 using namespace godot;
 
 class ExampleClass : public RefCounted {
-	GDCLASS(ExampleClass, RefCounted)
+    GDCLASS(ExampleClass, RefCounted)
 
 protected:
-	static void _bind_methods();
+    static void _bind_methods();
 
 public:
-	ExampleClass() = default;
-	~ExampleClass() override = default;
+    ExampleClass() = default;
+    ~ExampleClass() override = default;
 
-	void print_type(const Variant &p_variant) const;
+    void print_type(const Variant &p_variant) const;
+    String say_hello();
 };
